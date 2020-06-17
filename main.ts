@@ -1154,11 +1154,11 @@ function initializeHeroAnimations () {
     animateCrouch()
     animateJumps()
 }
-function createPlayer (player: Sprite) {
-    player.ay = gravity
-    scene.cameraFollowSprite(player)
-    controller.moveSprite(player, 100, 0)
-    player.z = 5
+function createPlayer (player2: Sprite) {
+    player2.ay = gravity
+    scene.cameraFollowSprite(player2)
+    controller.moveSprite(player2, 100, 0)
+    player2.z = 5
     info.setLife(3)
     info.setScore(0)
 }
@@ -1337,21 +1337,21 @@ f f f 7 f f f f f f 7 f f f f f 7 f f f f f 7 f f f f f f f f f
 7 1 . 7 . 7 5 7 2 . 7 2 . . . 7 7 . 2 . . 2 . . 2 . . . . e . 7 
 7 f f 7 f 7 f 7 f f 7 f f f f 7 7 f f f f f f f f f f f f f f 7 
 `, img`
-5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
-5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
-5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
-5 5 5 5 5 5 7 7 5 5 5 5 5 5 5 5 
-5 5 5 5 5 5 5 5 5 5 5 7 7 5 5 5 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . 5 5 5 5 5 5 5 5 5 5 5 . 
+. . . . 5 5 7 7 5 5 5 5 5 5 5 . 
+. . . . 5 5 5 5 5 5 5 7 7 5 5 . 
 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
 5 5 5 7 7 5 5 5 7 7 5 5 5 5 5 5 
 7 7 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
-5 5 5 7 7 5 5 5 5 5 5 5 7 7 5 5 
-5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
+5 5 5 7 7 5 5 . . 5 5 5 7 7 5 5 
+5 5 5 5 5 5 5 5 . 5 5 5 5 5 5 5 
 5 5 7 7 5 5 7 7 5 5 7 7 5 5 5 5 
 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
 7 7 5 5 7 7 5 5 7 7 5 5 7 7 5 5 
-5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
-5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 e 
+. . . 5 5 5 5 5 5 5 5 5 5 5 5 5 
+. . . 5 5 5 5 5 5 5 5 5 5 5 5 e 
 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
 `]
 initializeAnimations()
